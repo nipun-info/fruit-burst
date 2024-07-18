@@ -63,7 +63,8 @@
         <div class="mt-8">
             <div class="carousel w-full">
                 <!-- slide-1 -->
-                <div id="slide1" class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner1.png)] h-[60vh] bg-center bg-cover flex items-center justify-center rounded-md">
+                <div id="slide1"
+                    class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner1.png)] h-[60vh] bg-center bg-cover flex items-center justify-center rounded-md">
                     <div class="absolute top-10 right-10 bg-red-400 text-white px-4 py-2 ">
                         <h6>Hot Deal !!</h6>
                     </div>
@@ -79,7 +80,8 @@
                 </div>
 
                 <!-- slide-2 -->
-                <div id="slide2" class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner2.png)] h-[60vh] bg-center bg-cover flex items-center justify-center rounded-md">
+                <div id="slide2"
+                    class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner2.png)] h-[60vh] bg-center bg-cover flex items-center justify-center rounded-md">
                     <div class="text-white text-center space-y-4">
                         <h1 class="text-3xl lg:text-6xl font-bold ">Exotic tastes at your <br> doorstep</h1>
                         <p class="w-2/3 mx-auto text-lg">We supply highly quality organic products</p>
@@ -92,7 +94,8 @@
                 </div>
 
                 <!-- slide-3 -->
-                <div id="slide3" class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner3.png)] h-[60vh] bg-center bg-cover flex items-center justify-center rounded-md">
+                <div id="slide3"
+                    class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner3.png)] h-[60vh] bg-center bg-cover flex items-center justify-center rounded-md">
                     <div class="text-white text-center space-y-4">
                         <h1 class="text-3xl lg:text-6xl font-bold ">Exotic tastes at your <br> doorstep</h1>
                         <p class="w-2/3 mx-auto text-lg">We supply highly quality organic products</p>
@@ -105,7 +108,8 @@
                 </div>
 
                 <!-- slide-4 -->
-                <div id="slide4" class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner4.png)] h-[60vh] bg-center bg-cover flex items-center justify-center rounded-md">
+                <div id="slide4"
+                    class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner4.png)] h-[60vh] bg-center bg-cover flex items-center justify-center rounded-md">
                     <div class="text-white text-center space-y-4">
                         <h1 class="text-3xl lg:text-6xl font-bold ">Exotic tastes at your <br> doorstep</h1>
                         <p class="w-2/3 mx-auto text-lg">We supply highly quality organic products</p>
@@ -116,10 +120,11 @@
                         <a href="#slide1" class="btn btn-circle">❯</a>
                     </div>
                 </div>
-                
+
 
             </div>
-            <div class="lg:flex hidden h-[20vh] w-3/4 mx-auto  bg-white shadow-lg rounded-lg  items-center justify-center -translate-y-24">
+            <div
+                class="lg:flex hidden h-[20vh] w-3/4 mx-auto  bg-white shadow-lg rounded-lg  items-center justify-center -translate-y-24">
                 <div class="flex justify-center gap-4">
                     <img src="./images/fruit1.png" alt="">
                     <img src="./images/fruit2.png" alt="">
@@ -132,10 +137,119 @@
     </header>
 
     <!-- main section starts here -->
-    <main></main>
+    <main>
+        <!-- Deal of the day section -->
+        <section class="my-24 container lg:px-24 px-8 mx-auto ">
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-6">
+                <div class="lg:w-2/3 ">
+                    <h2 class="text-4xl font-bold mb-4">Deal of the Day</h2>
+                    <p class="text-lg opacity-80">Contrary to popular belief, is not simply random text. It has roots in
+                        a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div class="w-full lg:w-2/3 flex lg:justify-end ">
+                    <div class="grid auto-cols-max grid-flow-col gap-5 text-center ">
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:15;"></span>
+                            </span>
+                            days
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:10;"></span>
+                            </span>
+                            hours
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:24;"></span>
+                            </span>
+                            min
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:${counter};"></span>
+                            </span>
+                            sec
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- fruits cards -->
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="flex flex-col justify-center items-center space-x-4 border-2 rounded-md px-4 py-6">
+                    <img src="./images/fruit6.png" alt="">
+                    <h5>$12.99-$18.99</h5>
+                    <div class="divider"></div>
+                    <p>Apple</p>
+                    <div class="rating mt-4">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="checked" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <button class="btn btn-ghost">Details</button>
+                </div>
+
+                <div class="flex flex-col justify-center items-center space-x-4 border-2 rounded-md px-4 py-6">
+                    <img src="./images/fruit5.png" alt="">
+                    <h5>$12.99-$18.99</h5>
+                    <div class="divider"></div>
+                    <p>Apple</p>
+                    <div class="rating mt-4">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="checked" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <button class="btn btn-ghost">Details</button>
+                </div>
+
+                <div class="flex flex-col justify-center items-center space-x-4 border-2 rounded-md px-4 py-6">
+                    <img src="./images/fruit4.png" alt="">
+                    <h5>$12.99-$18.99</h5>
+                    <div class="divider"></div>
+                    <p>Apple</p>
+                    <div class="rating mt-4">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="checked" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <button class="btn btn-ghost">Details</button>
+                </div>
+
+                <div class="flex flex-col justify-center items-center space-x-4 border-2 rounded-md px-4 py-6">
+                    <img src="./images/fruit3.png" alt="">
+                    <h5>$12.99-$18.99</h5>
+                    <div class="divider"></div>
+                    <p>Apple</p>
+                    <div class="rating mt-4">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="checked" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <button class="btn btn-ghost">Details</button>
+                </div>
+            </div>
+            <div class="mt-8 text-center ">
+                <button class="btn bg-red-400 text-white">Shop All</button>
+            </div>
+        </section>
+    </main>
 
     <!-- footer section starts here -->
-    <footer></footer>
+    <footer class="py-24 bg-black">
+        <div>
+            lorem500
+        </div>
+    </footer>
 </body>
 
 </html>
